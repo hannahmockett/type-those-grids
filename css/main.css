@@ -13,15 +13,10 @@ body {
   margin: 1rem;
 }
 
-figure {
+main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-areas:
-    "h3"
-    "figcaption";
-  grid-area: main;
-  gap: .75rem;
-  align-self: center;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
 dt, dd {

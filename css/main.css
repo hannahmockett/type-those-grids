@@ -1,0 +1,33 @@
+html {
+  box-sizing: border-box;
+  font-family: Merriweather, serif;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 1rem;
+}
+
+figure {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "h3"
+    "figcaption";
+  grid-area: main;
+  gap: .75rem;
+  align-self: center;
+}
+
+dt, dd {
+  font-size: 1.5rem;
+}
+
+figcaption {
+  font-size: 1.5rem;
+}

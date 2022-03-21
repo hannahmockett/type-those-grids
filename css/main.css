@@ -2,43 +2,19 @@ html {
   box-sizing: border-box;
   font-family: Merriweather, serif;
   line-height: 1.5;
-  font-size: 1.5rem;
-  margin: 1rem 1.5rem;
-  padding: 1rem 1.5rem;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
 }
 
-header {
-  margin: 1.5rem;
-}
-
-div {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-}
-
-div img {
-  grid-column: 1/2;
-  align-self: end;
-  z-index: 1;
-}
-
-body {
-  margin: 1rem;
-}
-
 main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
-    "img img img"
-    "h3 h3 h3"
-    "dl dl dl";
-    gap: .75rem
+    "banner banner"
+    "banner-text banner-text banner-text";
+  gap: .75rem;
 }
 
 dt, dd {
@@ -51,8 +27,7 @@ figcaption {
 
 .banner {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 4rem;
+  grid-area: banner;
 }
 
 .banner img {

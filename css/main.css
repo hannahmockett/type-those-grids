@@ -9,7 +9,9 @@ html {
 }
 
 body {
+  font-size: .9rem;
   margin: 0;
+  padding: 0;
 }
 
 main {
@@ -21,39 +23,49 @@ main {
   gap: .75rem;
 }
 
+header {
+  margin: 1rem;
+}
+
 h1 {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  margin: 0;
 }
 
-dt, dd {
-  font-size: 1.5rem;
+main > img {
+  grid-area: banner;
+  max-width: inherit;
+}
+
+h1 h2 dt {
+  font-style: italic;
+}
+
+figcaption {
+  padding: .2rem 1.2rem;
 }
 
 figure {
   margin: 0;
 }
 
-figcaption {
-  font-size: 1.5rem;
+img {
+  width: 100%;
 }
 
 .banner-image {
   display: grid;
   grid-area: banner;
-  width: 100%;
 }
 
 .banner-text {
   grid-area: banner;
   color: white;
-}
-
-div {
-  grid-column: 1/2;
   align-self: end;
-  z-index: 1;
+  padding: 1.5rem 1rem;
 }

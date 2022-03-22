@@ -8,43 +8,52 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  margin: 0;
+}
+
 main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
-    "banner banner"
-    "banner-text banner-text banner-text";
+    "banner banner banner"
+    "col1 col2 col3";
   gap: .75rem;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1.5rem;
 }
 
 dt, dd {
   font-size: 1.5rem;
 }
 
+figure {
+  margin: 0;
+}
+
 figcaption {
   font-size: 1.5rem;
 }
 
-.banner {
+.banner-image {
   display: grid;
   grid-area: banner;
+  width: 100%;
 }
 
-.banner img {
-  grid-column: 1 / -1;
-  grid-row: 1 / -1;
+.banner-text {
+  grid-area: banner;
+  color: white;
 }
 
-h2 p {
-  grid-column: 1;
-  grid-row: 2;
+div {
+  grid-column: 1/2;
+  align-self: end;
   z-index: 1;
-}
-
-dl {
-  grid-area: dl;
-}
-
-h3 {
-  grid-area: h3;
 }
